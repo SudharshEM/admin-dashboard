@@ -1,0 +1,31 @@
+<nz-content>
+  <div nz-row>
+    <div nz-col nzSpan="12">
+      <div class="chart">
+        <apx-chart
+          #gradiantCircleChart
+          [series]="gradiantCircleChartOptions.series!"
+          [chart]="gradiantCircleChartOptions.chart!"
+          [plotOptions]="gradiantCircleChartOptions.plotOptions!"
+          [labels]="gradiantCircleChartOptions.labels!"
+          [stroke]="gradiantCircleChartOptions.stroke!"
+          [fill]="gradiantCircleChartOptions.fill!"
+        ></apx-chart>
+      </div>
+    </div>
+    <div nz-col nzSpan="12">
+      <div class="chart">
+        <apx-chart
+          #customAngleCircleChart
+          [series]="customAngleCircleChartOptions.series!"
+          [chart]="customAngleCircleChartOptions.chart!"
+          [plotOptions]="customAngleCircleChartOptions.plotOptions!"
+          [labels]="customAngleCircleChartOptions.labels!"
+          [legend]="customAngleCircleChartOptions.legend!"
+          [colors]="customAngleCircleChartOptions.colors!"
+          [responsive]="customAngleCircleChartOptions.responsive!"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
+</nz-content>

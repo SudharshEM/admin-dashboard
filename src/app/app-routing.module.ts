@@ -9,6 +9,14 @@ const routes: Routes = [
         redirectTo: 'home',
     },
     {
+        path: 'dashboard',
+        component: DefaultLayoutComponent,
+        loadChildren: () =>
+            import('./dashboards/dashboards.module').then(
+                (m) => m.DashboardsModule
+            ),
+    },
+    {
         path: '',
         component: DefaultLayoutComponent,
         loadChildren: () =>

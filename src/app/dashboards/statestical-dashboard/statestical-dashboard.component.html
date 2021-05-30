@@ -1,0 +1,30 @@
+<nz-content>
+  <nz-row>
+    <nz-col [nzSpan]="6">
+      <nz-statistic
+        [nzValue]="completedCount"
+        [nzTitle]="'Status'"
+        [nzSuffix]="'/ ' + totalCount"
+      ></nz-statistic>
+    </nz-col>
+    <nz-col [nzSpan]="6">
+      <nz-statistic
+        [nzValue]="pendingCount"
+        [nzTitle]="'Pending'"
+      ></nz-statistic>
+    </nz-col>
+    <nz-col [nzSpan]="6">
+      <nz-statistic
+        [nzValue]="(averageTimeTakenInSeconds | number: '1.1-2')!"
+        [nzTitle]="'Average speed'"
+        [nzSuffix]="'s'"
+      ></nz-statistic>
+    </nz-col>
+    <nz-col [nzSpan]="6">
+      <nz-statistic
+        [nzValue]="(expectedToCompleteAt | date: 'short')!"
+        [nzTitle]="'Expected to complete at'"
+      ></nz-statistic>
+    </nz-col>
+  </nz-row>
+</nz-content>

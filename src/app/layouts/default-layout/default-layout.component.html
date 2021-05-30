@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<ul nz-menu nzMode="horizontal">
+  <li nz-menu-item nzSelected>
+    <a routerLink="/home">
+      <i nz-icon nzType="pie-chart" nzTheme="outline"></i>
+      Radial Bar Dashboard
+    </a>
+  </li>
+  <!-- <li nz-menu-item>
+    <a routerLink="/dashboard/tabular">
+      <i nz-icon nzType="bar-chart" nzTheme="outline"></i>
+      Tabular Dashboard
+    </a>
+  </li> -->
+</ul>
+<div class="app-content">
+  <router-outlet></router-outlet>
+</div>
