@@ -10,21 +10,25 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardsModule } from './dashboards/dashboards.module';
+import { LayoutsModule } from './layouts/layouts.module';
+import { PagesModule } from './pages/pages.module';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule
-  ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        LayoutsModule,
+        DashboardsModule,
+        PagesModule,
+    ],
+    providers: [{ provide: NZ_I18N, useValue: en_US }],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
